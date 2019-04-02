@@ -1,13 +1,15 @@
-package id.co.trisun.tel_uevent;
+package id.co.trisun.tel_uevent.User;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ListAcaraActivity extends AppCompatActivity {
+import id.co.trisun.tel_uevent.R;
+
+public class FormPendaftaranAcara extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_acara);
+        setContentView(R.layout.activity_form_pendaftaran_acara);
     }
 }

@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import id.co.trisun.tel_uevent.AcaraFragment;
 
-public class CategoryAdapter extends FragmentPagerAdapter {
+public class CategoryAdminAdapter extends FragmentPagerAdapter {
 
     private String[] judulTab = {"Acara", "Permintaan", "Daftar User"};
     private Context mContext;
@@ -17,7 +17,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         return judulTab[position];
     }
 
-    public CategoryAdapter( Context context, FragmentManager fm) {
+    public CategoryAdminAdapter(Context context, FragmentManager fm) {
         super(fm);
         this.mContext = context;
     }
