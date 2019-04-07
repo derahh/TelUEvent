@@ -25,7 +25,7 @@ public class JadwalAdapter extends RecyclerView.Adapter<JadwalAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_acara, viewGroup, false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_jadwal_user, viewGroup, false);
         return new ViewHolder(view);
     }
 

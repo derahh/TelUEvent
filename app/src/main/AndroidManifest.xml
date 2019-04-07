@@ -10,23 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".User.FormPendaftaranAcara" />
-        <activity android:name=".User.UserActivity" />
-        <activity android:name=".admin.AdminActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+        <activity android:name=".User.UserActivity"></activity>
+        <activity android:name=".admin.AdminActivity"></activity>
         <activity android:name=".DaftarAcaraActivity" />
-        <activity android:name=".DetailAcaraActivity"></activity>
+        <activity android:name=".DetailAcaraActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DaftarActivity2"></activity>
     </application>
 
 </manifest>

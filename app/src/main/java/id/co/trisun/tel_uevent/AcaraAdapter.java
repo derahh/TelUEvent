@@ -42,7 +42,9 @@ public class AcaraAdapter extends RecyclerView.Adapter<AcaraAdapter.ViewHolder> 
         viewHolder.namaAcaraTextView.setText(acara.getNamaAcaraWord());
         viewHolder.pembuatAcaraTextView.setText(acara.getPembuatAcaraWord());
         viewHolder.waktuAcaraTextView.setText(acara.getWaktuAcaraWord());
+//        viewHolder.deskripsiAcara.setText(acara.getDeskripsiAcara());
         viewHolder.fotoAcara.setImageResource(acara.getFotoAcara());
+//        viewHolder.iconWaktu.setImageResource(acara.getIconWaktu());
 //        if (acara.hasImage()){
 //            viewHolder.fotoAcara.setVisibility(View.VISIBLE);
 //            viewHolder.fotoAcara.setImageResource(acara.getFotoAcara());
@@ -57,14 +59,16 @@ public class AcaraAdapter extends RecyclerView.Adapter<AcaraAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView namaAcaraTextView, pembuatAcaraTextView, waktuAcaraTextView;
-        final ImageView fotoAcara;
+        final TextView namaAcaraTextView, pembuatAcaraTextView, waktuAcaraTextView, deskripsiAcara;
+        final ImageView fotoAcara, iconWaktu;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             namaAcaraTextView = itemView.findViewById(R.id.namaAcara);
             pembuatAcaraTextView = itemView.findViewById(R.id.pembuatAcara);
             waktuAcaraTextView = itemView.findViewById(R.id.waktuAcara);
+            deskripsiAcara = itemView.findViewById(R.id.deskripsiAcara_tv);
             fotoAcara = itemView.findViewById(R.id.fotoAcara);
+            iconWaktu = itemView.findViewById(R.id.iconWaktu_iv);
         }
     }
 }
